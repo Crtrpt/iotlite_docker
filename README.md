@@ -15,7 +15,9 @@ docker-compose up
 
 或者单独启动 指定 redis 和 mysql
 ```
-docker run -d  -p9000:80  iotlite
+docker run -d -p 3306:3306/tcp -e MYSQL_ROOT_PASSWORD=root  percona/percona-server:8.0
+docker run -d -p 6379:6379/tcp redis
+docker run -d -p 9000:80  iotlite -e 
 ```
 
 k8s中启动
