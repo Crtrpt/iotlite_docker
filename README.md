@@ -17,3 +17,8 @@ docker-compose up
 ```
 docker run -d  -p9000:80  iotlite
 ```
+
+k8s中启动
+```
+TODO 
+```
