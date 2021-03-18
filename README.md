@@ -13,7 +13,7 @@ docker build . -t iotlite
 docker-compose up
 ```
 
-或者单独启动
+或者单独启动 指定 redis 和 mysql
 ```
 docker run -d  -p9000:80  iotlite
 ```
