@@ -1,5 +1,5 @@
 FROM alpine:latest
-
+RUN apk add redis
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 RUN mkdir -p /run/nginx
 RUN apk add nginx
@@ -17,5 +17,5 @@ RUN wget $APPLICATION_DOWNLOAD_URL
 RUN tar -zxvf iotlite_core.tar.gz
 RUN java -version
 RUN ls -a ./target/*
-CMD ["nginx","&","java","-jar","./target/iotlite.jar"]
+CMD ["nginx","&&","redis-server","&&","java","-jar","./target/iotlite.jar"]
 
