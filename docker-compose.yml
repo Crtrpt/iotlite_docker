@@ -1,0 +1,8 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  iot:
+    image: iot
+  mysql:
+    image: percona-server
+  redis:
+    image: redis
