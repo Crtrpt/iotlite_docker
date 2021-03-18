@@ -22,5 +22,5 @@ docker run -d iotlite -e
 
 k8s中启动
 ```
-TODO 
+kubectl apply -f iotlite.k8s.yaml
 ```
