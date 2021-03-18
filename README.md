@@ -17,7 +17,7 @@ docker-compose up
 ```
 docker run -d -p 3306:3306/tcp -e MYSQL_ROOT_PASSWORD=root  percona/percona-server:8.0
 docker run -d -p 6379:6379/tcp redis
-docker run -d iotlite -e 
+docker run -d -p 80:80/tcp iotlite -e 
 ```
 
 k8s中启动
