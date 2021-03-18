@@ -6,6 +6,10 @@
 ```
 docker build . -t iotlite
 ```
+或者直接docker pull
+```
+docker pull jingdor/iotlite
+```
 
 或者单独启动 指定 redis 和 mysql
 ```
