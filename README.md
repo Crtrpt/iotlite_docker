@@ -1,5 +1,3 @@
-
-```
 或者直接docker pull
 ```
 docker pull jingdor/iotlite
