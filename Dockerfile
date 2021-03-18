@@ -16,5 +16,6 @@ ENV APPLICATION_DOWNLOAD_URL=https://github.com/Crtrpt/iotlite_core/releases/dow
 RUN wget $APPLICATION_DOWNLOAD_URL
 RUN tar -zxvf iotlite_core.tar.gz
 RUN java -version
+RUN ls -a
 RUN java -jar iotlite.jar
 CMD ["nginx","-g","daemon off;"]
